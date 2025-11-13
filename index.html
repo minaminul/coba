@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT Mina Construction - Survey & Pemetaan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo">
+                    <div class="logo-icon">📐</div>
+                    <span class="logo-text">PT Mina Construction</span>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+                <div class="menu" id="navMenu">
+                    <a href="#beranda" class="nav-link">HOME</a>
+                    <a href="#layanan" class="nav-link">LAYANAN</a>
+                    <a href="#tentang" class="nav-link">TENTANG KAMI</a>
+                    <a href="#kontak" class="nav-link">KONTAK KAMI</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- BERANDA Section -->
+        <section id="beranda" class="hero">
+            <!-- Fixed image path to public folder -->
+            <div class="hero-background" style="background-image: url('public/excavator-mining-working.jpg')"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-box">
+                        <h1>Solusi Survey Profesional</h1>
+                        <p>Kami adalah ahli dalam bidang survei topografi dan pemetaan digital. Dengan teknologi drone dan GPS terkini, kami menyediakan data presisi tinggi untuk proyek konstruksi, infrastruktur, dan pertambangan Anda.</p>
+                        <p>Tim surveyor bersertifikat kami siap memberikan solusi lengkap dari akuisisi data hingga analisis kontur 3D dengan akurasi maksimal.</p>
+                        <div class="hero-buttons">
+                            <a href="#kalkulator" class="btn btn-primary">Coba Kalkulator</a>
+                            <a href="#kontur" class="btn btn-outline">Lihat Kontur</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TENTANG Section -->
+        <section id="tentang" class="about">
+            <!-- Fixed image path to public folder -->
+            <div class="about-background" style="background-image: url('public/excavator-mining-working.jpg')"></div>
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-box">
+                        <h2>Visi & Misi</h2>
+                        <div class="about-visi">
+                            <h3>Visi</h3>
+                            <p>Menjadi penyedia solusi survey dan pemetaan terdepan di Asia Tenggara dengan teknologi terkini dan tim profesional yang berdedikasi tinggi.</p>
+                        </div>
+                        <div class="about-misi">
+                            <h3>Misi</h3>
+                            <ul>
+                                <li>• Memberikan data survey dengan akurasi tinggi</li>
+                                <li>• Menggunakan teknologi drone dan GPS terkini</li>
+                                <li>• Layanan profesional dan responsif</li>
+                                <li>• Mendukung kesuksesan proyek klien</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LAYANAN Section -->
+        <section id="layanan" class="services">
+            <!-- Fixed image path to public folder -->
+            <div class="services-background" style="background-image: url('public/bulldozer-heavy-equipment.jpg')"></div>
+            <div class="container">
+                <div class="services-header">
+                    <div class="services-box">
+                        <h2>Layanan Kami</h2>
+                        <p>Kami menyediakan berbagai layanan survey dan pemetaan yang disesuaikan dengan kebutuhan proyek Anda. Tim profesional kami siap memberikan solusi terbaik.</p>
+                        <p>Dengan teknologi drone terkini dan software analisis canggih, kami menghadirkan data presisi untuk mendukung kesuksesan proyek Anda.</p>
+                    </div>
+                </div>
+                <div class="services-grid">
+                    <!-- Fixed all image paths to public folder -->
+                    <div class="service-card">
+                        <img src="public/excavator-equipment-survey.jpg" alt="Survei Topografi">
+                        <div class="service-label">Survei Topografi</div>
+                    </div>
+                    <div class="service-card">
+                        <img src="public/gps-mapping-drone-aerial.jpg" alt="Pemetaan GPS">
+                        <div class="service-label">Pemetaan GPS</div>
+                    </div>
+                    <div class="service-card">
+                        <img src="public/loader-contour-analysis.jpg" alt="Analisis Kontur">
+                        <div class="service-label">Analisis Kontur</div>
+                    </div>
+                    <div class="service-card">
+                        <img src="public/dump-truck-volume.jpg" alt="Perhitungan Volume">
+                        <div class="service-label">Perhitungan Volume</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KALKULATOR Section -->
+        <section id="kalkulator" class="calculator">
+            <!-- Fixed image path to public folder -->
+            <div class="calculator-background" style="background-image: url('public/bulldozer-heavy-equipment.jpg')"></div>
+            <div class="container">
+                <h1 class="calc-title">Kalkulator Surveyor</h1>
+                
+                <div class="calc-tabs">
+                    <button class="calc-tab active" data-tab="jarak">Hitung Jarak</button>
+                    <button class="calc-tab" data-tab="luas">Hitung Luas</button>
+                    <button class="calc-tab" data-tab="volume">Hitung Volume</button>
+                </div>
+
+                <div class="calc-container">
+                    <!-- Jarak Tab -->
+                    <div class="calc-tab-content active" data-tab="jarak">
+                        <h3>Hitung Jarak Antar Titik</h3>
+                        <div class="calc-grid">
+                            <input type="number" placeholder="X1" id="x1" class="calc-input">
+                            <input type="number" placeholder="Y1" id="y1" class="calc-input">
+                            <input type="number" placeholder="Z1" id="z1" class="calc-input">
+                        </div>
+                        <div class="calc-grid">
+                            <input type="number" placeholder="X2" id="x2" class="calc-input">
+                            <input type="number" placeholder="Y2" id="y2" class="calc-input">
+                            <input type="number" placeholder="Z2" id="z2" class="calc-input">
+                        </div>
+                        <button class="btn btn-primary calc-btn" onclick="hitungJarak()">Hitung Jarak</button>
+                        <div id="jarakResult" class="calc-result"></div>
+                    </div>
+
+                    <!-- Luas Tab -->
+                    <div class="calc-tab-content" data-tab="luas">
+                        <h3>Hitung Luas</h3>
+                        <input type="number" placeholder="Jumlah Titik" id="luasPoints" class="calc-input">
+                        <button class="btn btn-primary calc-btn" onclick="hitungLuas()">Hitung Luas</button>
+                        <div id="luasResult" class="calc-result"></div>
+                    </div>
+
+                    <!-- Volume Tab -->
+                    <div class="calc-tab-content" data-tab="volume">
+                        <h3>Hitung Volume</h3>
+                        <input type="number" placeholder="Luas Alas (m²)" id="area" class="calc-input">
+                        <input type="number" placeholder="Tinggi (m)" id="height" class="calc-input">
+                        <button class="btn btn-primary calc-btn" onclick="hitungVolume()">Hitung Volume</button>
+                        <div id="volumeResult" class="calc-result"></div>
+                    </div>
+
+                    <p class="calc-note">Gunakan kalkulator ini untuk perhitungan cepat. Untuk analisis detail, hubungi tim kami.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- KONTUR Section -->
+        <section id="kontur" class="contour">
+            <!-- Fixed image path to public folder -->
+            <div class="contour-background" style="background-image: url('public/mining-site-location-project.jpg')"></div>
+            <div class="container">
+                <h1 class="contour-title">Visualisasi Kontur</h1>
+                
+                <div class="contour-container">
+                    <div class="contour-upload">
+                        <h3>Upload File Survey</h3>
+                        <p class="upload-desc">Format: CSV atau JSON dengan koordinat (X, Y, Z)</p>
+                        <div class="upload-area" onclick="document.getElementById('fileInput').click()">
+                            <input type="file" id="fileInput" accept=".csv,.json" style="display: none;">
+                            <div class="upload-icon">📁</div>
+                            <p id="fileName" class="upload-text">Klik atau drag file di sini</p>
+                            <p class="upload-subtext">CSV atau JSON</p>
+                        </div>
+                    </div>
+
+                    <div class="contour-options">
+                        <h3>Pilih Visualisasi</h3>
+                        <div class="viz-buttons">
+                            <button class="viz-btn active" data-viz="2d" onclick="setVisualization('2d')">2D - Garis Kontur</button>
+                            <button class="viz-btn" data-viz="3d" onclick="setVisualization('3d')">3D - Permukaan Tanah</button>
+                        </div>
+                    </div>
+
+                    <div class="contour-preview">
+                        <h3>Preview</h3>
+                        <div id="previewArea" class="preview-area">
+                            Upload file terlebih dahulu untuk melihat preview
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary" style="width: 100%;">Proses Data</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- KONTAK Section -->
+        <section id="kontak" class="contact">
+            <!-- Fixed image path to public folder -->
+            <div class="contact-background" style="background-image: url('public/mining-project-site.jpg')"></div>
+            <div class="container">
+                <h1 class="contact-title">Hubungi Kami</h1>
+                
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <h3>📞 Telepon</h3>
+                            <p>+62-123-456-7890</p>
+                        </div>
+                        <div class="contact-card">
+                            <h3>📧 Email</h3>
+                            <p>info@minaconst.id</p>
+                        </div>
+                        <div class="contact-card">
+                            <h3>📍 Alamat</h3>
+                            <p>Jl. Surveyor No. 123<br>Jakarta, Indonesia</p>
+                        </div>
+                        <div class="contact-card">
+                            <h3>🕐 Jam Operasional</h3>
+                            <p>Senin - Jumat: 09:00 - 17:00<br>Sabtu: 09:00 - 13:00</p>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" onsubmit="submitForm(event)">
+                        <div class="form-group">
+                            <label>Nama</label>
+                            <input type="text" placeholder="Nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="Email Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Pesan</label>
+                            <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Kirim Pesan</button>
+                        <div id="submitMessage" style="display: none;" class="submit-success">✓ Pesan terkirim! Terima kasih.</div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">📐 PT Mina Construction</div>
+                    <p>Solusi survey dan pemetaan profesional untuk proyek Anda.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li><a href="#layanan">Survei Topografi</a></li>
+                        <li><a href="#layanan">Pemetaan GPS</a></li>
+                        <li><a href="#layanan">Analisis Kontur</a></li>
+                        <li><a href="#layanan">Perhitungan Volume</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Perusahaan</h4>
+                    <ul>
+                        <li><a href="#tentang">Tentang Kami</a></li>
+                        <li><a href="#kontak">Kontak</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Karir</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontak</h4>
+                    <p>📞 +62-123-456-7890<br>📧 info@minaconst.id<br>📍 Jakarta, Indonesia</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PT Mina Construction. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
